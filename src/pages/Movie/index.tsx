@@ -75,9 +75,7 @@ const Movie: React.FC = () => {
             alt={movie.title}
             onLoad={() => setImageLoader(true)}
           />
-
           {!imageLoader && <Skeleton width="30%" height="300px" />}
-
           <MovieInfo>
             <h2> {movie.title} </h2>
             <p>{movie.overview}</p>
