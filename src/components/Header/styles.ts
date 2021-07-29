@@ -25,8 +25,8 @@ export const Content = styled.div`
   width: 70%;
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   ul {
@@ -53,6 +53,17 @@ export const Content = styled.div`
       ::after {
         background-color: ${props => props.theme.stroke};
       }
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+
+    img {
+      height: 100px;
+      margin-bottom: 20px;
     }
   }
 `;

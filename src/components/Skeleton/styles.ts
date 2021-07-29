@@ -15,7 +15,7 @@ export const KeyFrameLoading = keyframes`
 `;
 
 export const LoadingSkeleton = styled.div<Props>`
-  background-color: gray;
+  background-color: ${props => props.theme.cardBackground};
   border-radius: 6px;
   margin-bottom: 10px;
   min-width: ${props => props.width};

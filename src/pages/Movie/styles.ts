@@ -30,15 +30,29 @@ export const Content = styled.div`
   width: 70%;
   margin: 40px auto;
 
-  padding: 20px;
+  padding: 15px;
 
   border: 2px solid ${props => props.theme.secondary};
 
   animation: ${appearFromBottom} 0.7s;
+
+  @media (min-width: 788px) and (max-width: 1300px) {
+    width: 80%;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    img {
+      width: 60%;
+    }
+  }
 `;
 
 export const MovieImage = styled.img<ImageProps>`
-  width: 400px;
+  width: 30%;
   height: 75%;
   border-radius: 15px;
 
@@ -51,6 +65,8 @@ export const MovieImage = styled.img<ImageProps>`
 
 export const MovieInfo = styled.div`
   padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
 
   h2 {
     font-size: 36px;
@@ -59,6 +75,22 @@ export const MovieInfo = styled.div`
 
   p {
     font-size: 18px;
+  }
+
+  @media (max-width: 1100px) {
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid ${props => props.theme.stroke};
   }
 `;
 
@@ -70,6 +102,37 @@ export const MovieDetails = styled.div`
   align-items: center;
 
   margin-top: 60px;
+
+  @media (min-width: 1400px) and (max-width: 1600px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    div + div {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 1399px) {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    div + div {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    div {
+      h3 {
+        font-size: 18px;
+      }
+      span,
+      li {
+        font-size: 14px;
+      }
+    }
+  }
 `;
 
 export const MovieRate = styled.div`
@@ -84,7 +147,7 @@ export const MovieRate = styled.div`
     height: 50px;
     border-radius: 50%;
     font-size: 18px;
-    margin-left: 15px;
+    margin-left: 10px;
   }
 `;
 

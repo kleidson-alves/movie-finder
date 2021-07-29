@@ -33,6 +33,14 @@ export const SearchArea = styled.div`
   width: 50%;
 
   animation: ${appearFromTop} 0.7s;
+
+  @media (min-width: 801px) and (max-width: 1150px) {
+    width: 80%;
+  }
+
+  @media (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 export const Search = styled.div`
@@ -93,4 +101,18 @@ export const MovieSection = styled.section`
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
   gap: 20px;
+
+  @media (min-width: 788px) and (max-width: 1150px) {
+    grid-template-columns: 250px 250px 250px;
+    gap: 15px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 250px 250px;
+    gap: 2px;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 250px;
+  }
 `;

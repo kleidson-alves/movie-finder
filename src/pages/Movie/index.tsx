@@ -75,7 +75,9 @@ const Movie: React.FC = () => {
             alt={movie.title}
             onLoad={() => setImageLoader(true)}
           />
-          {!imageLoader && <Skeleton width="100%" height="75%" />}
+
+          {!imageLoader && <Skeleton width="30%" height="300px" />}
+
           <MovieInfo>
             <h2> {movie.title} </h2>
             <p>{movie.overview}</p>
@@ -87,8 +89,8 @@ const Movie: React.FC = () => {
               <MovieGenre>
                 <h3>Gênero:</h3>
                 <Genres>
-                  {movie.genres.map(genre => (
-                    <li key={genre.id}>{genre.name}</li>
+                  {movie.genres.map((genre, index) => (
+                    <>{index < 5 && <li key={genre.id}>{genre.name}</li>}</>
                   ))}
                 </Genres>
               </MovieGenre>
