@@ -90,6 +90,17 @@ export const Search = styled.div`
       `}
     }
   }
+
+  @media (max-width: 500px) {
+    button {
+      display: none;
+    }
+
+    input {
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
 `;
 
 export const Loader = styled.div`

@@ -71,4 +71,18 @@ export const Container = styled(animated.div)<ToastProps>`
         margin-top: 0;
       }
     `}
+
+  @media (max-width: 500px) {
+    padding: 10px;
+    width: 250px;
+
+    strong {
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 9px;
+      line-height: 15px;
+    }
+  }
 `;
