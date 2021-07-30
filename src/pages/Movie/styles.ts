@@ -92,6 +92,17 @@ export const MovieInfo = styled.div`
     padding: 20px;
     border: 2px solid ${props => props.theme.stroke};
   }
+  @media (max-width: 550px) {
+    padding: 10px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
 `;
 
 export const MovieDetails = styled.div`
@@ -130,6 +141,18 @@ export const MovieDetails = styled.div`
       span,
       li {
         font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    div {
+      h3 {
+        font-size: 14px;
+      }
+      span,
+      li {
+        font-size: 12px;
       }
     }
   }
