@@ -199,4 +199,24 @@ export const Genres = styled.ul`
   li:nth-child(2n-1) {
     background: ${props => props.theme.secondary};
   }
+
+  @media (max-width: 500px) {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    gap: 5px;
+
+    li {
+      text-align: center;
+      background: ${props => props.theme.secondary};
+      width: 100%;
+      padding: 2px 0;
+
+      :nth-child(2) {
+        background: ${props => props.theme.cardBackground};
+      }
+      :nth-child(3) {
+        background: ${props => props.theme.cardBackground};
+      }
+    }
+  }
 `;
