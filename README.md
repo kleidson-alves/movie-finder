@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Movies Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O Movies Finder é uma aplicação web desenvolvida durante o processo seletivo de um estágio na Startap, cujo desafio era construir um site responsivo que apresenta ao usuário filmes a partir de uma API à escolha. 
 
-## Available Scripts
+## Conheça o Movies Finder
 
-In the project directory, you can run:
+<img src="./src/assets/presentation/home.png" />
 
-### `yarn start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Funcionalidades disponíveis
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br>
 
-### `yarn test`
+- O usuário poderá fazer a busca pelo filme que desejar. A aplicação retornará resultado(s) contanto que o que foi pesquisado esteja disponível na base de dados. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./src/assets/presentation/searchMovie.png" />
 
-### `yarn build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- O usuário poderá ver mais detalhes do filme que desejar   
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="./src/assets/presentation/movieDescription.png" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `yarn eject`
+- O usuário poderá conferir os filmes mais recentes, mais populares e mais votados
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### O que foi usado para desenvolver?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ReactJs
+- Typescript
+- TMDB API
