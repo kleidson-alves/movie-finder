@@ -1,6 +1,6 @@
 # Movies Finder
 
-O Movies Finder é uma aplicação web desenvolvida durante o processo seletivo de um estágio na Startap, cujo desafio era construir um site responsivo que apresenta ao usuário filmes a partir de uma API à escolha. 
+O Movies Finder é uma aplicação web desenvolvida durante o processo seletivo de um estágio na Startapp, cujo desafio era construir um site responsivo que apresenta ao usuário filmes a partir de uma API à escolha. 
 
 ## Conheça o Movies Finder
 
